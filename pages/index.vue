@@ -2,50 +2,24 @@
   <div class="d-flex flex-column align-items-center">
     <div id="banner" class="carousel slide">
       <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#banner"
-          v-for="(b, index) in banner"
-          :data-bs-slide-to="index"
-          :class="[index === 0 && 'active']"
-          :key="index"
-        ></button>
+        <button type="button" data-bs-target="#banner" v-for="(b, index) in banner" :data-bs-slide-to="index" :class="[index === 0 && 'active']" :key="index"></button>
       </div>
       <div class="carousel-inner">
-        <div
-          :class="['carousel-item', index === 0 && 'active']"
-          v-for="(b, index) in banner"
-          :key="index"
-        >
-          <img
-            :src="b.url"
-            class="d-block w-100"
-            style="aspect-ratio: 1/0.618; object-fit: cover"
-            alt=""
-          />
+        <div :class="['carousel-item', index === 0 && 'active']" v-for="(b, index) in banner" :key="index">
+          <img :src="b.url" class="banner-image d-block w-100" alt="" />
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <div class="content" style="padding: 10px 5vw">
+    <div class="response-content">
       <div class="d-flex justify-content-between my-4">
         <div class="d-flex flex-1 p-2 flex-column align-items-center">
           <div class="hf-btn">
@@ -91,30 +65,20 @@
         <div class="row">
           <div class="col-6">
             <div class="card flex-fil mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/1.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/1.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  聚焦消费热点 | 汉服火出圈 消费风头劲
-                </div>
+                <div class="card__info f-han fs-6">聚焦消费热点 | 汉服火出圈 消费风头劲</div>
               </div>
             </div>
           </div>
 
           <div class="col-6">
             <div class="card flex-fill mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/2.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/2.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  唐装汉服轻舞 激发文旅融合新活力
-                </div>
+                <div class="card__info f-han fs-6">唐装汉服轻舞 激发文旅融合新活力</div>
               </div>
             </div>
           </div>
@@ -122,59 +86,39 @@
         <div class="row">
           <div class="col-lg-3 col-6">
             <div class="card flex-fill mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/3.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/3.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  聚焦消费热点 | 汉服火出圈 消费风头劲
-                </div>
+                <div class="card__info f-han fs-6">聚焦消费热点 | 汉服火出圈 消费风头劲</div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-6">
             <div class="card flex-fill mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/4.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/4.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  唐装汉服轻舞 激发文旅融合新活力
-                </div>
+                <div class="card__info f-han fs-6">唐装汉服轻舞 激发文旅融合新活力</div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-6">
             <div class="card flex-fill mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/5.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/5.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  唐装汉服轻舞 激发文旅融合新活力
-                </div>
+                <div class="card__info f-han fs-6">唐装汉服轻舞 激发文旅融合新活力</div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-6">
             <div class="card flex-fill mb-4 overflow-hidden">
-              <div
-                style="background-image: url(/img/temp/6.jpg)"
-                class="card-img-top"
-              ></div>
+              <div style="background-image: url(/img/temp/6.jpg)" class="card-img-top"></div>
 
               <div class="card-body">
-                <div class="card__info f-han fs-6">
-                  唐装汉服轻舞 激发文旅融合新活力
-                </div>
+                <div class="card__info f-han fs-6">唐装汉服轻舞 激发文旅融合新活力</div>
               </div>
             </div>
           </div>
@@ -186,94 +130,82 @@
   </div>
 </template>
 <script setup>
-definePageMeta({ layout: "h-c-f" });
+  definePageMeta({ layout: "h-c-f" });
 
-const banner = reactive([
-  { url: "/img/banner/banner0.jpg" },
-  { url: "/img/banner/banner1.jpg" },
-  { url: "/img/banner/banner2.jpg" },
-  { url: "/img/banner/banner3.jpg" },
-  { url: "/img/banner/banner4.jpg" },
-]);
+  const banner = reactive([{ url: "/img/banner/banner0.jpg" }, { url: "/img/banner/banner1.jpg" }, { url: "/img/banner/banner2.jpg" }, { url: "/img/banner/banner3.jpg" }, { url: "/img/banner/banner4.jpg" }]);
 </script>
 
 <style lang="less" scoped>
-.content {
-  max-width: min(1200px, 100%);
-  overflow: hidden;
-  @media screen and (max-width: 860px) {
-  }
-}
-.hf-btn {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img {
+  .hf-btn {
+    position: relative;
     width: 100%;
-    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      z-index: 2;
+    }
+    &::before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      border-radius: 50%;
+      border: 1px solid #cd9393;
+    }
+    &::after {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 4px;
+      right: 4px;
+      border-radius: 50%;
+      border: 1px solid #cd9393;
+    }
   }
-  &::before {
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    border-radius: 50%;
-    border: 1px solid #cd9393;
-  }
-  &::after {
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 4px;
-    bottom: 4px;
-    left: 4px;
-    right: 4px;
-    border-radius: 50%;
-    border: 1px solid #cd9393;
-  }
-}
 
-.deco-title {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 87px;
-    background: url(/img/ruyi.png);
-    background-size: 100%;
+  .banner-image {
+    aspect-ratio: 1.8/1;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 100%;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+
+  .card-img-top {
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position-y: center;
+    width: 100%;
+    aspect-ratio: 2/1;
+    cursor: pointer;
   }
-}
+  .card__info {
+    z-index: 2;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.card {
-  width: 100%;
-  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-}
-
-.card-img-top {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  aspect-ratio: 2/1;
-  cursor: pointer;
-}
-.card__info {
-  z-index: 2;
-  background-color: #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  @media (min-width: 1200px) {
+    .banner-image {
+      aspect-ratio: 3/1;
+    }
+  }
+  @media (max-width: 1200px) {
+    .banner-image {
+      aspect-ratio: 2/1;
+    }
+  }
 </style>
