@@ -11,3 +11,25 @@
 .f-han {
   font-family: SourceHanSansCN;
 }
+
+.carousel-indicators {
+  margin: 0;
+  padding-right: 1rem;
+  justify-content: right;
+  button {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg,transparent, rgba(0, 0, 0, 0.8) );
+    z-index: -1;
+  }
+}

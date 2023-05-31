@@ -38,6 +38,7 @@
   padding: 0 12px;
   font-size: 24px;
   font-family: calligraphy;
+  cursor: pointer;
 }
 
 .nav-divider {

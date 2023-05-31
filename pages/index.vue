@@ -7,7 +7,7 @@
           data-bs-target="#banner"
           v-for="(b, index) in banner"
           :data-bs-slide-to="index"
-          class="active"
+          :class="[index === 0 && 'active']"
           :key="index"
         ></button>
       </div>
@@ -17,7 +17,12 @@
           v-for="(b, index) in banner"
           :key="index"
         >
-          <img :src="b.url" class="d-block w-100" alt="" />
+          <img
+            :src="b.url"
+            class="d-block w-100"
+            style="aspect-ratio: 1/0.618; object-fit: cover"
+            alt=""
+          />
         </div>
       </div>
       <button
@@ -58,7 +63,7 @@
           <div class="hf-btn">
             <img src="/img/hf/hf3.png" alt="" />
           </div>
-          <div class="mt-3 f-han fs-6">汉服科普</div>
+          <div class="mt-3 f-han fs-6">汉服百科</div>
         </div>
         <div class="d-flex flex-1 p-2 flex-column align-items-center">
           <div class="hf-btn">
