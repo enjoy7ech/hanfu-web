@@ -31,7 +31,7 @@
                   alt=""
                 />
                 <span
-                  class="fs-6 fs-md-5 text-light f-han"
+                  class="fs-6 text-light f-han"
                   style="position: absolute; bottom: 0; left: 1rem; z-index: 2"
                 >
                   {{ b.title }}
@@ -99,7 +99,7 @@
           <div class="card shadow">
             <img class="left-img shadow" src="/img/banner/banner2.jpg" alt="" />
             <div
-              class="d-flex flex-column justify-content-center f-han fs-6 fs-md-5 p-3"
+              class="d-flex flex-column justify-content-center f-han fs-6 p-3"
             >
               <div
                 style="
@@ -112,7 +112,7 @@
               >
                 汉服产业春风得意，总规模超十亿 周边产业多点开花
               </div>
-              <div class="f-han fs-6 fs-md-5 ms-auto mt-auto">点击浏览</div>
+              <div class="f-han fs-6 ms-auto mt-auto">点击浏览</div>
             </div>
           </div>
         </div>

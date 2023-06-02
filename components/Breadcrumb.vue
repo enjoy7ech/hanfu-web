@@ -1,6 +1,6 @@
 <template>
   <div
-    class="d-flex fs-6 fs-md-4 f-han overflow-md-hidden"
+    class="d-flex fs-6 f-han overflow-md-hidden"
     style="padding: 15px 5vw; background: url(/img/bread.jpg); color: #fff"
     v-if="bread.length"
   >

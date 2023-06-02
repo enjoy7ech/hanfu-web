@@ -1,12 +1,12 @@
 <template>
   <div
-    class="row fs-6 fs-md-4 f-han"
+    class="row fs-6 f-han"
     style="padding: 30px 5vw; background: #313131; color: #fff"
   >
     <div class="col-6 p-0">
       <div class="d-flex flex-fill align-items-center">
         <img src="/img/brand.png" alt="" style="height: 1rem" />
-        <div class="lh-1 ms-2">中国汉服文化网官方网站</div>
+        <div class="lh-1 fs-5 ms-2">中国汉服文化网官方网站</div>
       </div>
       <div class="mt-3">联系方式：0516-123-5412</div>
       <div class="mt-3">投稿邮箱：hanfu@qq.com</div>
@@ -14,7 +14,7 @@
 
     <div class="col-6 p-0">
       <div class="d-flex flex-fill align-items-center">
-        <div class="lh-1">关于我们</div>
+        <div class="lh-1 fs-5">关于我们</div>
       </div>
 
       <div class="mt-3">
