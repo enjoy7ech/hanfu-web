@@ -7,5 +7,5 @@ FROM node:16.20-alpine
 WORKDIR /app
 COPY --from=builder /app/.output .
 ENV PORT=8081
-CMD ["node", "./.output/server/index.mjs"]
+CMD ["node", "./server/index.mjs"]
 EXPOSE 8081

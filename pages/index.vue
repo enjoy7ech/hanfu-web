@@ -40,7 +40,7 @@
       </button>
     </div>
 
-    <div class="response-content">
+    <div class="restriction">
       <div class="d-flex justify-content-between my-4">
         <div
           class="d-flex flex-1 p-2 flex-column align-items-center"
@@ -51,25 +51,37 @@
           </div>
           <div class="mt-3 f-han fs-6">汉服资讯</div>
         </div>
-        <div class="d-flex flex-1 p-2 flex-column align-items-center">
+        <div
+          class="d-flex flex-1 p-2 flex-column align-items-center"
+          @click="$router.push('/collection')"
+        >
           <div class="hf-btn">
             <img src="/img/hf/hf2.png" alt="" />
           </div>
           <div class="mt-3 f-han fs-6">活动锦集</div>
         </div>
-        <div class="d-flex flex-1 p-2 flex-column align-items-center">
+        <div
+          class="d-flex flex-1 p-2 flex-column align-items-center"
+          @click="$router.push('/encyclopedia')"
+        >
           <div class="hf-btn">
             <img src="/img/hf/hf3.png" alt="" />
           </div>
           <div class="mt-3 f-han fs-6">汉服百科</div>
         </div>
-        <div class="d-flex flex-1 p-2 flex-column align-items-center">
+        <div
+          class="d-flex flex-1 p-2 flex-column align-items-center"
+          @click="$router.push('/knowledge')"
+        >
           <div class="hf-btn">
             <img src="/img/hf/hf4.png" alt="" />
           </div>
           <div class="mt-3 f-han fs-6">汉服知识</div>
         </div>
-        <div class="d-flex flex-1 p-2 flex-column align-items-center">
+        <div
+          class="d-flex flex-1 p-2 flex-column align-items-center"
+          @click="$router.push('/contact')"
+        >
           <div class="hf-btn">
             <img src="/img/hf/hf5.png" alt="" />
           </div>

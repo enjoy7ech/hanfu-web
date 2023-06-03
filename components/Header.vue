@@ -1,28 +1,35 @@
 <template>
-  <div
-    class="d-flex align-items-center justify-content-center justify-content-md-center"
-    style="height: 80px; padding: 10px 5vw"
-  >
-    <img src="/img/logo.svg" alt="" style="height: 60px" />
-    <img
-      src="/img/title.svg"
-      alt="中国汉服文化网"
-      style="height: 40px; margin-left: 12px"
-    />
-    <div class="ms-auto d-flex align-items-center pc-nav">
-      <a class="nav-link" href="/">首页</a>
-      <div class="nav-divider"></div>
-      <a class="nav-link" href="/news">汉服资讯</a>
-      <div class="nav-divider"></div>
-      <a class="nav-link">活动集锦</a>
-      <div class="nav-divider"></div>
-      <a class="nav-link">汉服百科</a>
-      <div class="nav-divider"></div>
-      <a class="nav-link">汉服知识</a>
-      <div class="nav-divider"></div>
-      <a class="nav-link">联系合作</a>
-    </div>
-    <!-- <div class="ms-auto menuToggle mobile-nav">
+  <div class="d-flex justify-content-center">
+    <div
+      class="restriction flex-fill d-flex align-items-center justify-content-center"
+      style="height: 80px"
+    >
+      <img
+        src="/img/logo.svg"
+        alt=""
+        style="height: 60px"
+        @click="$router.push('/')"
+      />
+      <img
+        src="/img/title.svg"
+        alt="中国汉服文化网"
+        style="height: 40px; margin-left: 12px"
+        @click="$router.push('/')"
+      />
+      <div class="ms-auto d-flex align-items-center pc-nav">
+        <a class="nav-link" href="/">首页</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="/news">汉服资讯</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="/collection">活动集锦</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="/encyclopedia">汉服百科</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="/knowledge">汉服知识</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="/contact">联系合作</a>
+      </div>
+      <!-- <div class="ms-auto menuToggle mobile-nav">
       <input type="checkbox" />
       <span></span>
       <span></span>
@@ -30,6 +37,7 @@
 
       <div class="menu"></div>
     </div> -->
+    </div>
   </div>
 </template>
 

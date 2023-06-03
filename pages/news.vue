@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex justify-content-center">
-    <div class="response-content">
+    <div class="restriction">
       <div class="row">
         <div class="col-12 col-md-6 mt-3 lv-1">
           <div
@@ -95,8 +95,8 @@
           <div class="fs-3 f-han ms-3">要点资讯</div>
           <div class="fs-5 ms-2">Key News</div>
         </div>
-        <div class="col-12 col-md-4 mb-3" v-for="(_, i) in 12" :key="i">
-          <div class="card shadow">
+        <div class="col-12 col-md-6 mb-3" v-for="(_, i) in 12" :key="i">
+          <div class="card-link shadow">
             <img class="left-img shadow" src="/img/banner/banner2.jpg" alt="" />
             <div
               class="d-flex flex-column justify-content-center f-han fs-6 p-3"
@@ -112,7 +112,9 @@
               >
                 汉服产业春风得意，总规模超十亿 周边产业多点开花
               </div>
-              <div class="f-han fs-6 ms-auto mt-auto">点击浏览</div>
+              <div class="f-han fs-6 ms-auto mt-auto right-lead">
+                <span class="align-middle"> 点击浏览 </span>
+              </div>
             </div>
           </div>
         </div>
@@ -215,19 +217,6 @@ const active = ref(0);
     .number {
       color: rgb(255, 153, 0);
     }
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  border-radius: 12px;
-  border: none;
-  .left-img {
-    border-radius: 12px;
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
   }
 }
 

@@ -1,0 +1,27 @@
+.card-link {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  border: none;
+  .left-img {
+    border-radius: 12px;
+    max-width: 270px;
+    width: 60%;
+    aspect-ratio: 1/ 0.618;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right-lead {
+    &::after{
+      content: '';
+      margin-left: 0.5rem;
+      background-image: url(/img/right-lead.svg);
+      background-size: cover;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+  }
+}
